@@ -34,6 +34,7 @@
     <!-- Navigation -->
     {% from "base.html" import navegation , footer%}
     {{ navegation() }}
+    {% set folder = 'cizhu' %}
 
     <!-- Page Content -->
     <div class="container">
@@ -68,13 +69,13 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img class="img-responsive" src="img/plastic/car1.jpg" alt="">
+                            <img class="img-responsive" height="250" src="img/{{folder}}/car1.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="img/plastic/car2.jpg" alt="">
+                            <img class="img-responsive"  height="250" src="img/{{folder}}/car2.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="img/plastic/car3.jpg" alt="">
+                            <img class="img-responsive"  height="250" src="img/{{folder}}/car3.jpg" alt="">
                         </div>
                     </div>
 
@@ -89,7 +90,7 @@
             </div>
 
             <div class="col-md-4">
-                <h3>Plastic ornaments and beads</h3>
+                <h3></h3>
                 <p>Plastic beads of different shapes and colors.</p>
                 <ul>
                     <li>Solid Colors: &yen; 7.5 / KG. Minimum Order 100 KG</li>
@@ -105,15 +106,14 @@
         <!-- /.row -->
 
         <div class="row"><p></p></div>
-
         <!-- Related Projects Row -->
-        {% for row in range(10) %}
+        {% for row in range(2) %}
         <div class="row">
-            {% for col in range(4) %}
-            <div class="col-sm-3 col-xs-6">
-                {% set id = row*5 + col + 1%}
-                <a href="img/plastic/{{id}}.jpg">
-                    <img class="img-responsive img-hover img-related" src="img/plastic/{{id}}.jpg" alt="">
+            {% for col in range(3) %}
+            <div class="col-sm-4 col-xs-6">
+                {% set id = row*3 + col + 1%}
+                <a href="img/{{folder}}/{{id}}.jpg">
+                    <img class="img-responsive img-hover img-related" src="img/{{folder}}/{{id}}.jpg" alt="">
                 </a>
             </div>
             {% endfor %}

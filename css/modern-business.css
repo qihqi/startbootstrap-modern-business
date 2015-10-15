@@ -6,6 +6,11 @@
 
 /* Global Styles */
 
+.white {
+     background-color:white;
+     text-color: black;
+}
+
 html,
 body {
     height: 100%;
