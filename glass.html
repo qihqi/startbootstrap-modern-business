@@ -34,7 +34,7 @@
     <!-- Navigation -->
     {% from "base.html" import navegation , footer%}
     {{ navegation() }}
-    {% set folder = 'cizhu' %}
+    {% set folder = 'glass' %}
 
     <!-- Page Content -->
     <div class="container">
@@ -42,7 +42,7 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Mostacilla
+                <h1 class="page-header">Glass Beads
                     <small></small>
                 </h1>
                 <ol class="breadcrumb">
@@ -91,31 +91,49 @@
 
             <div class="col-md-4">
                 <h3></h3>
-                <p>Mostacilla is small beads made of glass or china.</p>
+                <p>Grass Beads of different shapes and color</p>
+                <p>Available shapes: </p>
                 <ul>
-                    <li>Transparent Colors: &yen; 2.25 / KG.  </li>
-                    <li>Solid Oily Colors: &yen; 2.61 / KG.  </li>
-                    <li>Shiny Colors: &yen; 2.71 / KG. </li>
+                    <li>Balls of 4mm to 12mm of diameter
+                    <li>Water drops of 8mm to 12mm of width</li>
+                    <li>cynlinder of 4mm to 12mm diameter</li>
                 </ul>
-                <p>Minimum Order 100 KG </p>
+                <p>Prices:
+                <ul>
+                    <li>Solid Colors 4mm (Ball, Oval): &yen;  0.33/ea.</li>
+                    <li>Solid Colors 6mm (Ball, Oval): &yen;  0.50/ea.</li>
+                    <li>Solid Colors 8mm (Ball, Oval, and Drops): &yen;  0.65/ea.</li>
+                    <li>Solid Colors 10mm (Ball, Oval, and Drops): &yen;  1.02/ea.</li>
+                    <li>Solid Colors 12mm (Ball, Oval, and Drops): &yen;  1.25/ea.</li>
+                    <li>Pearl Colors 4mm (Ball, Oval): &yen;  0.35/ea.</li>
+                    <li>Pearl Colors 6mm (Ball, Oval): &yen;  0.50/ea.</li>
+                    <li>Pearl Colors 8mm (Ball, Oval, and Drops): &yen;  0.55/ea.</li>
+                    <li>Pearl Colors 10mm (Ball, Oval, and Drops): &yen; 0.81/ea.</li>
+                    <li>Pearl Colors 12mm (Ball, Oval, and Drops): &yen; 1.2/ea.</li>
+                </ul>
+                Minimun Order 5000 mixed.
+                <p>Esoteric colors or shapes could result increased price</p>
                 <p>Please contact us first, prices might change on case by case basis depending
                    on order quantity</p> 
             </div>
 
         </div>
         <!-- /.row -->
+        {% set rn=6 %} <!-- num of row-->
+        {% set cn=4 %}<!-- num of col-->
 
         <div class="row"><p></p></div>
         <!-- Related Projects Row -->
-        {% for row in range(2) %}
+        {% for row in range(rn) %}
         <div class="row">
-            {% for col in range(3) %}
-            <div class="col-sm-4 col-xs-6">
-                {% set id = row*3 + col + 1%}
+            {% for col in range(cn) %}
+            <div class="col-sm-3 col-xs-6">
+                {% set id = row*cn + col + 1%}
                 <a href="img/{{folder}}/{{id}}.jpg">
                     <img class="img-responsive img-hover img-related" src="img/{{folder}}/{{id}}.jpg" alt="">
                 </a>
             </div>
+            <p></p>
             {% endfor %}
         </div>
         <!-- /.row -->
