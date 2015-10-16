@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Riyao Imp & Exp</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Plastic Ornaments
+                <h1 class="page-header">Glass Beads
                     <small></small>
                 </h1>
                 <ol class="breadcrumb">
@@ -92,13 +92,10 @@
                 <h3>Plastic ornaments and beads</h3>
                 <p>Plastic beads of different shapes and colors.</p>
                 <ul>
-                    <li>Solid Colors: &yen; 3.75 / bag. Minimum Order 100 Bag</li>
-                    <li>Pearl Colors: &yen; 4.25 / bag. Minimum Order 100 Bag</li>
-                    <li>Metallic colors: &yen; 5.50 / bag. Minimum Order 50 Bag</li>
+                    <li>Solid Colors: &yen; 7.5 / KG. Minimum Order 100 KG</li>
+                    <li>Pearl Colors: &yen; 8.5 / KG. Minimum Order 100 KG</li>
+                    <li>Metallic colors: &yen; 11 / KG. Minimum Order 50 KG</li>
                 </ul>
-                <p>The quantity per bag depends on the size of the beads. Though all bags comes 0.5KG. 
-                   See "popular shape" section for details</p>
-                <p>For colors please see below for the color codes</p>
                 <p>Esoteric colors or shapes could result increased price</p>
                 <p>Please contact us first, prices might change on case by case basis depending
                    on order quantity</p> 
@@ -106,55 +103,15 @@
 
         </div>
         <!-- /.row -->
-        <div class="row">
-            <h2>Color Codes</h2>
-            <div class="col-sm-4 col-xs-6">
-                <a href="img/plastic/color1.jpg">
-                    <img class="img-responsive img-hover img-related" src="img/plastic/color1.jpg" alt="">
-                </a>
-                Solid Colors
-            </div>
-            <div class="col-sm-4 col-xs-6">
-                <a href="img/plastic/color2.jpg">
-                    <img class="img-responsive img-hover img-related" src="img/plastic/color2.jpg" alt="">
-                </a>
-                Milky Colors
-            </div>
-            <div class="col-sm-4 col-xs-6">
-                <a href="img/plastic/color3.jpg">
-                    <img class="img-responsive img-hover img-related" src="img/plastic/color3.jpg" alt="">
-                </a>
-                Semi Transparent Colors
-            </div>
-        </div>
-        <div class="row">
-            <h2>Popular Shapes</h2>
-            <div class="col-sm-4 col-xs-6">
-                <a href="img/plastic/shape1.jpg">
-                    <img class="img-responsive img-hover img-related" src="img/plastic/shape1.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 col-xs-6">
-                <a href="img/plastic/shape2.jpg">
-                    <img class="img-responsive img-hover img-related" src="img/plastic/shape2.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 col-xs-6">
-                <a href="img/plastic/shape3.jpg">
-                    <img class="img-responsive img-hover img-related" src="img/plastic/shape3.jpg" alt="">
-                </a>
-            </div>
-        </div>
 
         <div class="row"><p></p></div>
 
         <!-- Related Projects Row -->
         {% for row in range(10) %}
         <div class="row">
-            <h2></h2>
             {% for col in range(4) %}
             <div class="col-sm-3 col-xs-6">
-                {% set id = row*4 + col + 1%}
+                {% set id = row*5 + col + 1%}
                 <a href="img/plastic/{{id}}.jpg">
                     <img class="img-responsive img-hover img-related" src="img/plastic/{{id}}.jpg" alt="">
                 </a>
